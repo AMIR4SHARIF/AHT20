@@ -1,10 +1,11 @@
 # AHT20 Temperature and Humidity sensor Library
-#### suitable for stm32 / based on HAL functions
+### suitable for stm32 / based on HAL functions
 This Library is free, that all student and users can use it and develop their programs, the program is developed for STM32 micros and based on HAL functions, tested on STM32F1xx series.
 This library helps you to initilize AHT20 sensor and measure Temperature and humidity using I2C protocol based on HAL functions on STM32 microcontrollers.
 
-#### How to use
 ------------
+### How to use
+
 **1:** before "while" loop Initialize Sensor using AHT20_Init(*hi2c).
 
 **2:** use AHT20_Measure() function to sensor start measuring and transmit and receive data.
@@ -17,8 +18,9 @@ This library helps you to initilize AHT20 sensor and measure Temperature and hum
    - every time you want to know temperature changes you must use AHT20_Measure() again.
    - and then use AHT20_Temp() or AHT20_Humid() again and get new values after reseting sensor you must Initialize Sensor again (using AHT20_Init(*hi2c)).
 
-#### simple example
 ------------
+### simple example
+
 This is a figure of how you should use functions in C to develope your code.
 ``` C
     #include "main.h"  

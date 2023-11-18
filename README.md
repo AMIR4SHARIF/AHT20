@@ -23,17 +23,25 @@ This library helps you to initilize AHT20 sensor and measure Temperature and hum
 
 This is a figure of how you should use functions in C to develope your code.
 ``` C
-    #include "main.h"  
-    double T,H;
-     int main(){
+    #include "main.h"
+    #include "stdlib.h"
+    #include "AHT20.h"
+
+    double T,H;  //Global Variables
+
+    int main()
+    {
         sys_init();
         AHT20_Init(&hi2c1);
-        while(1){
+        while(1)
+        {
                AHT20_Measure();
                T=AHT20_Temp();
                H=AHT20_Humid();
+               printf("Temp=%f C,Humid=%f %\r\n".T,H);
                delay(1000);
          }
+        returb 0;
     }
 ```
 

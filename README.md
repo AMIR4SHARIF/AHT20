@@ -36,12 +36,12 @@ This is a figure of how you should use functions in C to develope your code.
         while(1)
         {
                AHT20_Measure();
-               T=AHT20_Temp();
-               H=AHT20_Humid();
+               T = AHT20_Temp();
+               H = AHT20_Humid();
                printf("Temp=%f C,Humid=%f %\r\n".T,H);
                delay(1000);
          }
-        returb 0;
+        return 0;
     }
 ```
 
